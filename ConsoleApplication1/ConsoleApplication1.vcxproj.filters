@@ -27,6 +27,18 @@
     <ClInclude Include="Contours.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="ImageProcess.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageRecog.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthAnalysis.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataSending.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -38,7 +50,13 @@
     <ClCompile Include="KinitInitClassFunc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TESToPENCV.h">
+    <ClCompile Include="Evaluations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceEye.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

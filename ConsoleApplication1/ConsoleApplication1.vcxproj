@@ -113,7 +113,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Lib\x64;F:\Libraries\opencv\build\x64\vc14\lib;F:\Libraries\QT4.8.0\lib;F:\Libraries\PCL 1.6.0\lib;F:\Program Files\OpenNI2\Lib;F:\Program Files\PrimeSense\NITE2\Lib;F:\Libraries\SDL2\SDL2-2.0.7\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;kinect20.lib;opencv_world331.lib;opencv_world331d.lib;OpenNI2.lib;Nite2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;kinect20.lib;OpenNI2.lib;Nite2.lib;opencv_world331d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -154,20 +154,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Contours.h" />
+    <ClInclude Include="DataSending.h" />
+    <ClInclude Include="DepthAnalysis.h" />
+    <ClInclude Include="ImageRecog.h" />
+    <ClInclude Include="ImageProcess.h" />
     <ClInclude Include="KinectInit.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Evaluations.cpp" />
+    <ClCompile Include="FaceEye.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="KinitInitClassFunc.cpp" />
+    <ClCompile Include="SDLRender.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="TESToPENCV.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
